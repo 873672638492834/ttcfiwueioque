@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>tt.coffee</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="tt.coffee - Tools for Timeless Taste.">
+	<meta name="keywords" content="tt.coffee - Tools for Timeless Taste.">
+	<link rel="icon" href="favicon.png" type="image/png">
+	<link rel="icon" href="favicon.svg" type="image/svg+xml">
+	<style type="text/css">
+		body, html {
+		  margin: 0;
+		  overflow: hidden;
+		  -webkit-transition: opacity 400ms;
+		  -moz-transition: opacity 400ms;
+		  transition: opacity 400ms;
+		}
+		body, .onepage-wrapper, html {
+		  display: block;
+		  position: static;
+		  padding: 0;
+		  width: 100%;
+		  height: 100%;
+		}
+		.onepage-wrapper {
+		  width: 100%;
+		  height: 100%;
+		  display: block;
+		  position: relative;
+		  padding: 0;
+		  -webkit-transform-style: preserve-3d;
+		}
+		.onepage-wrapper .section {
+		  width: 100%;
+		  height: 100%;
+		}
+		.onepage-pagination {
+		  position: absolute;
+		  right: 10px;
+		  top: 50%;
+		  z-index: 5;
+		  list-style: none;
+		  margin: 0;
+		  padding: 0;
+		}
+		.onepage-pagination li {
+		  padding: 0;
+		  text-align: center;
+		}
+		.onepage-pagination li a{
+		  padding: 10px;
+		  width: 4px;
+		  height: 4px;
+		  display: block;
+		}
+		.onepage-pagination li a:before{
+		  content: '';
+		  position: absolute;
+		  width: 4px;
+		  height: 4px;
+		  background: rgba(0,0,0,0.85);
+		  border-radius: 10px;
+		  -webkit-border-radius: 10px;
+		  -moz-border-radius: 10px;
+		}
+		.onepage-pagination li a.active:before{
+		  width: 10px;
+		  height: 10px;
+		  background: none;
+		  border: 1px solid black;
+		  margin-top: -4px;
+		  left: 8px;
+		}
+		.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+		  overflow: auto;
+		}
+		.disabled-onepage-scroll .onepage-wrapper .section {
+		  position: relative !important;
+		  top: auto !important;
+		  left: auto !important;
+		}
+		.disabled-onepage-scroll .onepage-wrapper {
+		  -webkit-transform: none !important;
+		  -moz-transform: none !important;
+		  transform: none !important;
+		  -ms-transform: none !important;
+		  min-height: 100%;
+		}
+		.disabled-onepage-scroll .onepage-pagination {
+		  display: none;
+		}
+		body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+		  position: inherit;
+		}
+		.page{
+		    text-align: center;
+		    font-size: 18px;
+		    background: #fff;
+		    display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: -webkit-flex;
+		    display: flex;
+		    -webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		    -webkit-justify-content: center;
+		    justify-content: center;
+		    -webkit-box-align: center;
+		    -ms-flex-align: center;
+		    -webkit-align-items: center;
+		    align-items: center;
+		  }
+		  .page svg{
+		  	width: 280px;
+		  	height: auto;
+		  }
+		  .page1 {
+		    background-color: #fff;
+		  }
+		  .page1 svg{
+		  	fill: #121212;
+		  }
+		  .page2 { 
+		    background-color: #121212;
+		  }
+		  .page2 svg{
+		  	fill: #fff;
+		  }
+		  .onepage-pagination{
+		    right: 20px;
+		  }
+		  .viewing-page-1 .onepage-pagination li a:before{
+		    background: rgba(50,50,50,1);
+		  }
+		  .viewing-page-1 .onepage-pagination li a.active:before{
+		    border: 1px solid #121212;
+		    background: none;
+		  }
+		  .viewing-page-2 .onepage-pagination li a:before{
+		    background: rgba(255,255,255,1);
+		  }
+		  .viewing-page-2 .onepage-pagination li a.active:before{
+		    border: 1px solid #fff;
+		    background: none;
+		  }
+	</style>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.onepage-scroll.min.js"></script>
+	<script>
+	$(function(){
+		$('.main').onepage_scroll({
+			sectionContainer: '.page'
+		});
+	});
+	</script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JC597NL4EC"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-JC597NL4EC');
+	</script>
+</head>
+<body>
+<div class="main">
+	<div class="page page1">
+		<svg title="tt.coffee - Tools for Timeless Taste." width="330px" height="74px" viewBox="0 0 330 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M112.6,50.28 C112.6,46.12 113.5,42.41 115.3,39.15 C117.1,35.89 119.61,33.35 122.83,31.53 C126.05,29.71 129.7,28.8 133.78,28.8 C138.78,28.8 143.06,30.12 146.62,32.76 C150.18,35.4 152.56,39 153.76,43.56 L142.48,43.56 C141.64,41.8 140.45,40.46 138.91,39.54 C137.37,38.62 135.62,38.16 133.66,38.16 C130.5,38.16 127.94,39.26 125.98,41.46 C124.02,43.66 123.04,46.6 123.04,50.28 C123.04,53.96 124.02,56.9 125.98,59.1 C127.94,61.3 130.5,62.4 133.66,62.4 C135.62,62.4 137.37,61.94 138.91,61.02 C140.45,60.1 141.64,58.76 142.48,57 L153.76,57 C152.56,61.56 150.18,65.15 146.62,67.77 C143.06,70.39 138.78,71.7 133.78,71.7 C129.7,71.7 126.05,70.79 122.83,68.97 C119.61,67.15 117.1,64.62 115.3,61.38 C113.5,58.14 112.6,54.44 112.6,50.28 Z M178.98,71.82 C175.02,71.82 171.39,70.9 168.09,69.06 C164.79,67.22 162.17,64.65 160.23,61.35 C158.29,58.05 157.32,54.34 157.32,50.22 C157.32,46.1 158.29,42.4 160.23,39.12 C162.17,35.84 164.79,33.28 168.09,31.44 C171.39,29.6 175.02,28.68 178.98,28.68 C182.94,28.68 186.57,29.6 189.87,31.44 C193.17,33.28 195.77,35.84 197.67,39.12 C199.57,42.4 200.52,46.1 200.52,50.22 C200.52,54.34 199.56,58.05 197.64,61.35 C195.72,64.65 193.12,67.22 189.84,69.06 C186.56,70.9 182.94,71.82 178.98,71.82 Z M178.98,62.46 C182.34,62.46 185.03,61.34 187.05,59.1 C189.07,56.86 190.08,53.9 190.08,50.22 C190.08,46.5 189.07,43.53 187.05,41.31 C185.03,39.09 182.34,37.98 178.98,37.98 C175.58,37.98 172.87,39.08 170.85,41.28 C168.83,43.48 167.82,46.46 167.82,50.22 C167.82,53.94 168.83,56.91 170.85,59.13 C172.87,61.35 175.58,62.46 178.98,62.46 Z M232.64,29.28 L232.64,37.5 L215.48,37.5 L215.48,46.38 L228.32,46.38 L228.32,54.36 L215.48,54.36 L215.48,71.4 L205.22,71.4 L205.22,29.28 L232.64,29.28 Z M264.46,29.28 L264.46,37.5 L247.3,37.5 L247.3,46.38 L260.14,46.38 L260.14,54.36 L247.3,54.36 L247.3,71.4 L237.04,71.4 L237.04,29.28 L264.46,29.28 Z M279.12,37.5 L279.12,46.02 L292.86,46.02 L292.86,53.94 L279.12,53.94 L279.12,63.18 L294.66,63.18 L294.66,71.4 L268.86,71.4 L268.86,29.28 L294.66,29.28 L294.66,37.5 L279.12,37.5 Z M310.58,37.5 L310.58,46.02 L324.32,46.02 L324.32,53.94 L310.58,53.94 L310.58,63.18 L326.12,63.18 L326.12,71.4 L300.32,71.4 L300.32,29.28 L326.12,29.28 L326.12,37.5 L310.58,37.5 Z M103.129557,71.72 C101.356158,71.72 99.9078818,71.1501075 98.7847291,70.0103226 C97.6615764,68.8705376 97.1,67.4619355 97.1,65.7845161 C97.1,64.064086 97.6615764,62.6232258 98.7847291,61.4619355 C99.9078818,60.3006452 101.356158,59.72 103.129557,59.72 C104.863547,59.72 106.292118,60.3006452 107.415271,61.4619355 C108.538424,62.6232258 109.1,64.064086 109.1,65.7845161 C109.1,67.4619355 108.538424,68.8705376 107.415271,70.0103226 C106.292118,71.1501075 104.863547,71.72 103.129557,71.72 Z" fill="#888888" fill-rule="nonzero"></path><path d="M57.2,15.6 L57.2,2 L74.3,2 L74.3,15.6 L89.7,15.6 L89.7,29.8 L74.3,29.8 L74.3,52.2 C74.3,53.8666667 74.7,55.0666667 75.5,55.8 C76.3,56.5333333 77.6333333,56.9 79.5,56.9 L89.6,56.9 L89.6,71.4 L76.9,71.4 C70.7,71.4 65.8666667,69.8833333 62.4,66.85 C58.9333333,63.8166667 57.2,58.8666667 57.2,52 L57.2,29.8 L35.7,29.8 L35.7,52.2 C35.7,53.8666667 36.1,55.0666667 36.9,55.8 C37.7,56.5333333 39.0333333,56.9 40.9,56.9 L51,56.9 L51,71.4 L38.3,71.4 C32.1,71.4 27.2666667,69.8833333 23.8,66.85 C20.3333333,63.8166667 18.6,58.8666667 18.6,52 L18.6,29.8 L3,29.8 L3,15.6 L18.6,15.6 L18.6,2 L35.7,2 L35.7,15.6 L57.2,15.6 Z" fill="#121212" fill-rule="nonzero"></path></g>
+		</svg>
+	</div>
+	<div class="page page2">
+		<svg title="tt.coffee - Tools for Timeless Taste." viewBox="0 0 330 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M112.6,50.28 C112.6,46.12 113.5,42.41 115.3,39.15 C117.1,35.89 119.61,33.35 122.83,31.53 C126.05,29.71 129.7,28.8 133.78,28.8 C138.78,28.8 143.06,30.12 146.62,32.76 C150.18,35.4 152.56,39 153.76,43.56 L142.48,43.56 C141.64,41.8 140.45,40.46 138.91,39.54 C137.37,38.62 135.62,38.16 133.66,38.16 C130.5,38.16 127.94,39.26 125.98,41.46 C124.02,43.66 123.04,46.6 123.04,50.28 C123.04,53.96 124.02,56.9 125.98,59.1 C127.94,61.3 130.5,62.4 133.66,62.4 C135.62,62.4 137.37,61.94 138.91,61.02 C140.45,60.1 141.64,58.76 142.48,57 L153.76,57 C152.56,61.56 150.18,65.15 146.62,67.77 C143.06,70.39 138.78,71.7 133.78,71.7 C129.7,71.7 126.05,70.79 122.83,68.97 C119.61,67.15 117.1,64.62 115.3,61.38 C113.5,58.14 112.6,54.44 112.6,50.28 Z M178.98,71.82 C175.02,71.82 171.39,70.9 168.09,69.06 C164.79,67.22 162.17,64.65 160.23,61.35 C158.29,58.05 157.32,54.34 157.32,50.22 C157.32,46.1 158.29,42.4 160.23,39.12 C162.17,35.84 164.79,33.28 168.09,31.44 C171.39,29.6 175.02,28.68 178.98,28.68 C182.94,28.68 186.57,29.6 189.87,31.44 C193.17,33.28 195.77,35.84 197.67,39.12 C199.57,42.4 200.52,46.1 200.52,50.22 C200.52,54.34 199.56,58.05 197.64,61.35 C195.72,64.65 193.12,67.22 189.84,69.06 C186.56,70.9 182.94,71.82 178.98,71.82 Z M178.98,62.46 C182.34,62.46 185.03,61.34 187.05,59.1 C189.07,56.86 190.08,53.9 190.08,50.22 C190.08,46.5 189.07,43.53 187.05,41.31 C185.03,39.09 182.34,37.98 178.98,37.98 C175.58,37.98 172.87,39.08 170.85,41.28 C168.83,43.48 167.82,46.46 167.82,50.22 C167.82,53.94 168.83,56.91 170.85,59.13 C172.87,61.35 175.58,62.46 178.98,62.46 Z M232.64,29.28 L232.64,37.5 L215.48,37.5 L215.48,46.38 L228.32,46.38 L228.32,54.36 L215.48,54.36 L215.48,71.4 L205.22,71.4 L205.22,29.28 L232.64,29.28 Z M264.46,29.28 L264.46,37.5 L247.3,37.5 L247.3,46.38 L260.14,46.38 L260.14,54.36 L247.3,54.36 L247.3,71.4 L237.04,71.4 L237.04,29.28 L264.46,29.28 Z M279.12,37.5 L279.12,46.02 L292.86,46.02 L292.86,53.94 L279.12,53.94 L279.12,63.18 L294.66,63.18 L294.66,71.4 L268.86,71.4 L268.86,29.28 L294.66,29.28 L294.66,37.5 L279.12,37.5 Z M310.58,37.5 L310.58,46.02 L324.32,46.02 L324.32,53.94 L310.58,53.94 L310.58,63.18 L326.12,63.18 L326.12,71.4 L300.32,71.4 L300.32,29.28 L326.12,29.28 L326.12,37.5 L310.58,37.5 Z M103.129557,71.72 C101.356158,71.72 99.9078818,71.1501075 98.7847291,70.0103226 C97.6615764,68.8705376 97.1,67.4619355 97.1,65.7845161 C97.1,64.064086 97.6615764,62.6232258 98.7847291,61.4619355 C99.9078818,60.3006452 101.356158,59.72 103.129557,59.72 C104.863547,59.72 106.292118,60.3006452 107.415271,61.4619355 C108.538424,62.6232258 109.1,64.064086 109.1,65.7845161 C109.1,67.4619355 108.538424,68.8705376 107.415271,70.0103226 C106.292118,71.1501075 104.863547,71.72 103.129557,71.72 Z" fill="#888888" fill-rule="nonzero"></path><path d="M57.2,15.6 L57.2,2 L74.3,2 L74.3,15.6 L89.7,15.6 L89.7,29.8 L74.3,29.8 L74.3,52.2 C74.3,53.8666667 74.7,55.0666667 75.5,55.8 C76.3,56.5333333 77.6333333,56.9 79.5,56.9 L89.6,56.9 L89.6,71.4 L76.9,71.4 C70.7,71.4 65.8666667,69.8833333 62.4,66.85 C58.9333333,63.8166667 57.2,58.8666667 57.2,52 L57.2,29.8 L35.7,29.8 L35.7,52.2 C35.7,53.8666667 36.1,55.0666667 36.9,55.8 C37.7,56.5333333 39.0333333,56.9 40.9,56.9 L51,56.9 L51,71.4 L38.3,71.4 C32.1,71.4 27.2666667,69.8833333 23.8,66.85 C20.3333333,63.8166667 18.6,58.8666667 18.6,52 L18.6,29.8 L3,29.8 L3,15.6 L18.6,15.6 L18.6,2 L35.7,2 L35.7,15.6 L57.2,15.6 Z" fill="#FFFFFF" fill-rule="nonzero"></path></g></svg>
+	</div>
+</div>
+</body>
+</html>
